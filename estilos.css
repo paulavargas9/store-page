@@ -177,17 +177,18 @@ h2 {
 
 /*Apartir de aqui empieza el estilo css de los productos*/
 
-.product-card {
+.product-card {  
   width: 200px;
-  height: 300px;
+  height: 260px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 16px;
+  padding: 10px;
   margin-bottom: 16px;
+  margin-right: 16px;
   cursor: pointer;
   text-decoration: none;
   transition: transform 0.3s;
@@ -204,6 +205,7 @@ h2 {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 16px;
+  
 }
 
 .product-image img {
@@ -221,7 +223,7 @@ h2 {
 .product-title {
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -247,11 +249,33 @@ h2 {
 
 
 .product-grid {
-  display: flex;
-  flex-wrap: wrap;
+  /* Establecer la cuadrícula de tres columnas */
+  display: grid;
+  width: 50%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
   justify-content: center;
-  margin-top: 32px;
+  margin-top: 32px
 }
+
+/* Asignar las tres primeras tarjetas a la primera fila */
+.product-grid > * {
+  grid-column: span 1;
+}
+
+.product-grid > :nth-child(1),
+.product-grid > :nth-child(2),
+.product-grid > :nth-child(3) {
+  grid-row: 1;
+}
+
+/* Asignar las tres tarjetas restantes a la segunda fila */
+.product-grid > :nth-child(4),
+.product-grid > :nth-child(5),
+.product-grid > :nth-child(6) {
+  grid-row: 2;
+}
+
 
 
 footer {
