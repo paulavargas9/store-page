@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Rihanna-Vinilo</title>
 </head>
 <body>
-    
+    <header id="header">
+        <div class="container">
+          <div class="header_izquierda">
+            <h1>LAME DISCOS</h1>
+            <a class="logo" href="#"><img src="imagenes/disco-vinilo_260559-180.avif" alt="logo"></a>
+          </div>
+          <div class="header_derecha">
+            <nav class="main_nav">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registro</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="imagen-contenedor">
+          <img src="imagenes/Anti-Ed-Deluxe.jpg" alt="Amy Winehouse"/>
+        </div>
+        <div class="contenedor-inf-producto">
+          <div class="titulo">
+            <h2>Rihanna- Anti(Ed.Deluxe)</h2>
+          </div>
+          <div class="precio">
+            <span>23,97€&euro;</span>
+          </div>
+          <div class="añadir-cantidad">
+            <div class="cantidad">
+              <label for="cantidad">cantidad</label>
+              <input type="number" placeholder="1" value="1" min="1" class="input-cantidad">
+              <div class="boton-incremento-decremento">
+                <i class="fa-solid fa-chevron-up" id="incremento"></i>
+                <i class="fa-solid fa-chevron-down" id="decremeto"></i>
+              </div>
+            </div>
+          </div>
+          <button class="boton-añadir-cantidad">
+            <i class="fa-solid fa-plus"></i>
+            Añadir al carrito
+          </button>
+          <div class="contenedor-descripcion">
+            <div class="titulo-descripcion">
+              <h3>Descripcion</h3>
+            </div>
+            <div class="texto-descripcion">
+              <p>El álbum "Anti" de Rihanna, lanzado en 2016, marca un cambio<br> significativo en su música.<br>
+                <br>Con una mezcla ecléctica de géneros y letras profundas, "Anti" muestra a Rihanna explorando 
+                 nuevos territorios musicales mientras mantiene su distintiva voz y personalidad, 
+                consolidando su posición como una de las artistas más influyentes de la industria musical.</p> 
+            </div>
+          </div>
+          <div class="contenedor-redes">
+            <span>Compartir</span>
+            <div class="contenedor-botones-redes">
+              <a ref="#"><i class="fa-brands fa-instagram"></i></a>
+              <a ref="#"><i class="fa-brands fa-facebook"></i></a>
+              <a ref="#"><i class="fa-brands fa-twitter"></i></a>
+              <a ref="#"><i class="fa-brands fa-pinterest"></i></a>
+              <a ref="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-content">
+          <p> Pagina realizada por Paula Vargas Silva </p>
+          <p><a ref="#"><i class="fa-solid fa-envelope"></i><a href="mailto:correo@example.com">paulavargasilva09@gmail.com</a></p>
+          <p>
+            &copy; LAME DISCOS.Todos los derechos reservados.
+          </p> 
+        </div>
+        <footer class="footer">
+          <div class="footer-content">
+            <p> Pagina realizada por Paula Vargas Silva </p>
+            <p><a ref="#"><i class="fa-solid fa-envelope"></i><a href="mailto:correo@example.com">paulavargasilva09@gmail.com</a></p>
+            <p>
+              &copy; LAME DISCOS.Todos los derechos reservados.
+            </p> 
+          </div>
+        </footer>
+        <script
+        src="https://kit.fontawesome.com/81581fb069.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="index.js"></script>
 </body>
 </html>

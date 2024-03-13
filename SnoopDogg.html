@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <title>SnoopDogg-Vinilo</title>
 </head>
 <body>
-    
+    <header id="header">
+        <div class="container">
+          <div class="header_izquierda">
+            <h1>LAME DISCOS</h1>
+            <a class="logo" href="#"><img src="imagenes/disco-vinilo_260559-180.avif" alt="logo"></a>
+          </div>
+          <div class="header_derecha">
+            <nav class="main_nav">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registro</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="imagen-contenedor">
+          <img src="imagenes/vinilosnopp.jpg" alt="Amy Winehouse"/>
+        </div>
+        <div class="contenedor-inf-producto">
+          <div class="titulo">
+            <h2>Snoop Dogg - Doggystyle</h2>
+          </div>
+          <div class="precio">
+            <span>22,99€&euro;</span>
+          </div>
+          <div class="añadir-cantidad">
+            <div class="cantidad">
+              <label for="cantidad">cantidad</label>
+              <input type="number" placeholder="1" value="1" min="1" class="input-cantidad">
+              <div class="boton-incremento-decremento">
+                <i class="fa-solid fa-chevron-up" id="incremento"></i>
+                <i class="fa-solid fa-chevron-down" id="decremeto"></i>
+              </div>
+            </div>
+          </div>
+          <button class="boton-añadir-cantidad">
+            <i class="fa-solid fa-plus"></i>
+            Añadir al carrito
+          </button>
+          <div class="contenedor-descripcion">
+            <div class="titulo-descripcion">
+              <h3>Descripcion</h3>
+            </div>
+            <div class="texto-descripcion">
+              <p>"Doggystyle" de Snoop Dogg, lanzado en 1993, es un álbum seminal<br> que marcó un hito en la historia del hip-hop.</p> 
+              </p>Con su estilo inconfundible y letras llenas de ingenio, Snoop Dogg ofrece<br> una crónica auténtica de la vida en las calles de Long Beach, California. 
+              Cada pista del álbum está impregnada de un sonido funk y g-funk irresistiblemente pegajoso, complementado por la fluidez 
+              y el carisma únicos de Snoop Dogg en el micrófono.</p>
+            </div>
+          </div>
+          <div class="contenedor-redes">
+            <span>Compartir</span>
+            <div class="contenedor-botones-redes">
+              <a ref="#"><i class="fa-brands fa-instagram"></i></a>
+              <a ref="#"><i class="fa-brands fa-facebook"></i></a>
+              <a ref="#"><i class="fa-brands fa-twitter"></i></a>
+              <a ref="#"><i class="fa-brands fa-pinterest"></i></a>
+              <a ref="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-content">
+          <p> Pagina realizada por Paula Vargas Silva </p>
+          <p><a ref="#"><i class="fa-solid fa-envelope"></i><a href="mailto:correo@example.com">paulavargasilva09@gmail.com</a></p>
+          <p>
+            &copy; LAME DISCOS.Todos los derechos reservados.
+          </p> 
+        </div>
+      </footer>
+      <script
+      src="https://kit.fontawesome.com/81581fb069.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script> 
 </body>
 </html>

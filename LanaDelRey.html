@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Lana del Rey - vinilo</title>
 </head>
 <body>
-    
+    <header id="header">
+        <div class="container">
+          <div class="header_izquierda">
+            <h1>LAME DISCOS</h1>
+            <a class="logo" href="#"><img src="imagenes/disco-vinilo_260559-180.avif" alt="logo"></a>
+          </div>
+          <div class="header_derecha">
+            <nav class="main_nav">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registro</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="imagen-contenedor">
+          <img src="imagenes/lanadelrey.webp" alt="Amy Winehouse"/>
+        </div>
+        <div class="contenedor-inf-producto">
+          <div class="titulo">
+            <h2>Lana del Rey - Born To Die</h2>
+          </div>
+          <div class="precio">
+            <span>18,99€&euro;</span>
+          </div>
+          <div class="añadir-cantidad">
+            <div class="cantidad">
+              <label for="cantidad">cantidad</label>
+              <input type="number" placeholder="1" value="1" min="1" class="input-cantidad">
+              <div class="boton-incremento-decremento">
+                <i class="fa-solid fa-chevron-up" id="incremento"></i>
+                <i class="fa-solid fa-chevron-down" id="decremeto"></i>
+              </div>
+            </div>
+          </div>
+          <button class="boton-añadir-cantidad">
+            <i class="fa-solid fa-plus"></i>
+            Añadir al carrito
+          </button>
+          <div class="contenedor-descripcion">
+            <div class="titulo-descripcion">
+              <h3>Descripcion</h3>
+            </div>
+            <div class="texto-descripcion">
+              <p>Lanzado en 2012,"Born to Die" de Lana Del Rey es un<br> álbum cautivador 
+                que fusiona el indie pop 
+              con toques de trip hop,
+               ofreciendo una experiencia musical inmersiva y melancólica.</p> 
+              </p> "Born to Die" se ha convertido en un clásico moderno,<br> dejando una marca indeleble en la música pop,
+              consolidando el estatus de Lana Del Rey como una de las artistas más influyentes de su generación.</p>
+            </div>
+          </div>
+          <div class="contenedor-redes">
+            <span>Compartir</span>
+            <div class="contenedor-botones-redes">
+              <a ref="#"><i class="fa-brands fa-instagram"></i></a>
+              <a ref="#"><i class="fa-brands fa-facebook"></i></a>
+              <a ref="#"><i class="fa-brands fa-twitter"></i></a>
+              <a ref="#"><i class="fa-brands fa-pinterest"></i></a>
+              <a ref="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-content">
+          <p> Pagina realizada por Paula Vargas Silva </p>
+          <p><a ref="#"><i class="fa-solid fa-envelope"></i><a href="mailto:correo@example.com">paulavargasilva09@gmail.com</a></p>
+          <p>
+            &copy; LAME DISCOS.Todos los derechos reservados.
+          </p> 
+        </div>
+      </footer>
+      <script
+      src="https://kit.fontawesome.com/81581fb069.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+      
 </body>
 </html>
