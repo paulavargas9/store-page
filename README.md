@@ -1,2 +1,0 @@
-# store-page
-Ejercicio css

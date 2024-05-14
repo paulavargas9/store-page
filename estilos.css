@@ -50,7 +50,7 @@ width: 500px;
 margin-top : 110px;
 height: 15px;
 margin-right: 40px; 
-background-color: #2ecc71;
+
 
 }
 
@@ -265,26 +265,23 @@ width: 50%;
 
 /*ESTILO PRODUCTOS VINILOS UNO POR UNO*/
 
-main{
+#main-producto{
   display: flex;
    gap:30px;
+   width: 50%;
    margin-top: 90px;
    margin-left: 90px;
-  color: black;
-  
+  color: black; 
 }
 
 .imagen-contenedor{
-  margin-top: 60px;
+  margin-top: 90px;
   width: 650px;
 }
-
-
 
 main , h2{
   margin-right: 130px;
   margin-left: 10px;
-  
 }
 
 h2{
@@ -415,11 +412,12 @@ font-weight: 500;
 
 /* Estilos CSS para el aside */
 .contenedor-contacto{
-width: 150px;
-margin-left: 50px;
-margin-top: 0px;
-margin-bottom: 50px;
+width: 250px;
+margin-left: 150px;
+padding: auto;
 }
+
+
 main{
   margin-top: 0;
 }
@@ -450,7 +448,7 @@ font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-left: 50px;
+  margin-left: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -513,10 +511,10 @@ footer {
   min-height: 50px;
   width: 99%;
   color: black;
-  text-align:center;
+  text-align:right;
   bottom: 0;
   left: 0;
-  right: 0; 
+  right: 0;
 }
 
 .footer-content p a {
@@ -529,17 +527,99 @@ footer {
   margin: 0;
 }
 
+
+#footer-producto {
+  min-height: 50px;
+  width: 100%;
+  color: black;
+  text-align:right;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 40px;
+  margin-top: 70px;
+ 
+}
+
+.footer-content p a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-contacto{
+  margin-top: 30px;
+}
+
+.footer-registro{
+
+  margin-top: -15px;
+}
+
+
+
 /* Estilos para dispositivos grandes (más de 1024px de ancho) */
+
+@media only screen and (min-width: 1024px)and (max-width: 1024px) {
+
+  .descripcion-inicio{
+    background-color: white;
+  }
+
+
+  .flex-container{
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    }
+    
+    #registro-form {
+      width: 40%; 
+      margin-left: auto; 
+      margin-right: auto;
+     
+    }
+    
+    .descripcion-inicio{
+      background-color: white;
+      padding-left: 25px;
+    padding-right: 25px;
+    }
+
+  
+}
 
 
 /* Estilos para dispositivos medianos (entre 769px y 1024px de ancho) */
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  main{
+    display: flex;
+     gap:30px;
+     margin-top: 90px;
+     margin-left: 90px;
+    color: black;
+    
+  }
+
   /* Estilos para el encabezado */
   .container {
       flex-direction: column; 
       align-items: center; 
       padding: 0px;
+    }
+
+    .descripcion-inicio{
+      background-color: white;
+      padding-left: 25px;
+      padding-right: 25px;
     }
   
 
@@ -548,6 +628,7 @@ footer {
     margin-left: 0; 
     margin-right: 0; 
     gap: 20px; 
+
   }
 
   /* Estilos para los productos */
@@ -563,21 +644,40 @@ footer {
     margin-left: 50px; 
     width: 40%; 
     padding: 0px;
-    margin-top:110px ;
+    margin-top:0px ;
   }
 
   /* Estilos para el formulario de registro */
   #registro-form {
     width: 40%; 
     margin-left: auto; 
-    margin-right: auto; 
-    margin-top: 100px;
- 
-  
+    margin-right: auto;
+     margin-top: 130px; 
+   margin-bottom: 0px;
   }
   .footer{
    margin-top:150px;
+  padding-bottom: 30px;
+  padding-top: 0px;
+  text-align: center;
   }
+
+  .footer-contacto{
+    min-height: 20px;
+    padding-bottom: 20px;
+    padding-top: 90px;
+    text-align: center;
+  }
+
+  .footer-registro{
+  
+    min-height: 20px;
+    padding-bottom: 20px;
+    padding-top: 90px;
+    text-align: center;
+
+}
+
 }
 
   
@@ -587,13 +687,16 @@ footer {
 
 
   .descripcion-inicio{
+    
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 25px;  
+    background-color: white;
   }
 
   body {
     font-size: 14px; 
   }
+
 
   .container {
     flex-direction: column; 
@@ -619,7 +722,6 @@ footer {
     text-align: center; 
   }
   .flex-container {
-    margin-left:95px;
     margin-right: 40px;
     width: 100%; 
   }
@@ -636,10 +738,28 @@ footer {
   }
   .footer{
     min-height: 20px;
-    padding-bottom: 20px;
-   
+    padding-bottom: 10px;
+    padding-top: 90px;
+    text-align: center;
   }
-  main {flex: 1;}
 
+  .footer-registro{
+  
+      min-height: 20px;
+      padding-bottom: 20px;
+      padding-top: 90px;
+      text-align: center;
+  
+  }
+
+  .footer-contacto{
+    min-height: 20px;
+    padding-bottom: 20px;
+    padding-top: 90px;
+    text-align: center;
+  }
+  main  {
+    width: 40%;
+    flex: 1;}
 }
 
